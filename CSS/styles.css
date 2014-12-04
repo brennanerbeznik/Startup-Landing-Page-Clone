@@ -48,23 +48,29 @@ table {
 	border-spacing: 0;
 }
 
-div {
+/*div {
 	border: 1px solid Chocolate;
-}
+}*/
 
 
 /*End of Reset*/
 /*Start of Custom Styles*/
 
 .content {
-	padding: 0px 15px;
+	padding: 0 0.938;
+	margin: 0 auto;
+	min-width: 37.5rem;
 	box-sizing: border-box;
 }
 
 /*Navigation Styles*/
 
 .top-navigation {
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
 	background-color: #fff;
+	border: 0.05em solid #e8e8e8;
 }
 
 .top-navigation > .content {
@@ -119,7 +125,7 @@ body {
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
-	height: 45.938rem;
+	height: 35.938rem;
 	overflow: auto;
 }
 
@@ -181,4 +187,36 @@ button:hover {
   	text-decoration: none;
 }
 
+.cases {
+	background-color: white;
+	height: 35rem;
+	overflow: hidden;
+	padding-bottom: 5rem;
+}
+
+.cases .content {
+	margin-top: 7.875rem;
+	color: #1d1e21;
+	text-align: center;
+}
+
+
+.cases .content > h2 {
+	font-size: 2.75rem;
+	margin: 1.625rem 0 3.125rem;
+	font-weight: 300;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+}
+
+.cases .devices > li {
+	display: inline-block;
+	box-sizing: border-box;
+	height: 4em;
+	width: 33.333333%;
+	float: left;
+}
 
